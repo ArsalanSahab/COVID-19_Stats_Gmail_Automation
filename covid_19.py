@@ -112,7 +112,7 @@ def initiate_covid():
     return
 
 #scheduled for every 4 hours
-schedule.every(4).hours.do(initiate_covid())
+schedule.every(4).hours.do(initiate_covid)
 
 while True:
     schedule.run_pending()
